@@ -28,9 +28,7 @@ const displayData = (shows) => {
       if(result.show.rating.average === null) {
         p.innerHTML = '';
       }
-      div.appendChild(img);
-      div.appendChild(h2);
-      div.appendChild(p);
+      div.append(img, h2, p);
       container.appendChild(div);   
     }
   }
